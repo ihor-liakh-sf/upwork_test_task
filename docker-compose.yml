@@ -3,7 +3,7 @@ version: "3.9"
 services:
   web:
     build: .
-    command: python hello_project/manage.py runserver 0.0.0.0:8000
+    command: bash hello_project/init.bash
     volumes:
       - .:/code
     ports:
